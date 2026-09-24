@@ -89,7 +89,7 @@ document.addEventListener("DOMContentLoaded", () => {
       cartItem.classList.add("cart-item");
       cartItem.innerHTML = `
         <span>${item.name} - $${item.price.toFixed(2)}</span>
-        <button data-index="${index}" class="remove-btn">Remove</button>
+        <button data-index="${index}" class="remove-btn" aria-label="Remove ${item.name} from cart">Remove</button>
       `;
       cartItems.appendChild(cartItem);
     });
